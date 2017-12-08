@@ -5,14 +5,65 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.dadanene.gittrusteeshipproject.MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        >
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     >
+     <TextView
+         android:layout_width="0dp"
+         android:layout_height="40dp"
+         android:layout_weight="1"
+         android:text="姓名:"
+         android:textSize="16sp"
+         android:textColor="#666"
+         android:paddingLeft="10dp"
+         android:gravity="center_vertical"
+         />
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="40dp"
+         android:text="guan"
+         android:textSize="16sp"
+         android:textColor="#666"
+         android:paddingRight="10dp"
+         android:gravity="center_vertical"
+         />
+ </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="微信:"
+                android:textSize="16sp"
+                android:textColor="#666"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="guan912596264"
+                android:textSize="16sp"
+                android:textColor="#666"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+
+
+ </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
