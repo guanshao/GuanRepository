@@ -13,8 +13,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initView();
-        initListener();
+        initView();//初始化控件的方法
+        initListener();//点击事件监听
     }
 
     private void initListener() {
